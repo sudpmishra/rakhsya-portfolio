@@ -40,7 +40,14 @@
     { "name": "Legal Drafting & Documentation", "category": "Drafting" },
     { "name": "Legal Research", "category": "Research" },
     { "name": "Translation", "category": "Language" },
-    { "name": "Communication", "category": "Soft Skills" }
+    { "name": "Communication", "category": "Soft Skills" },
+    { "name": "Advocacy", "category": "Advocacy" },
+    { "name": "Policy Review", "category": "Policy" },
+    { "name": "Negotiation", "category": "Advisory" },
+    { "name": "Project Management", "category": "Soft Skills" },
+    { "name": "Partnership Management", "category": "Soft Skills" },
+    { "name": "Report Preparation", "category": "Soft Skills" },
+    { "name": "Workshops & Training", "category": "Soft Skills" }
   ],
   "experience": [
     {
@@ -62,6 +69,32 @@
             "Perform Company Secretary duties, including drafting Board minutes, managing AGM/EGM, and preparing the Annual Report.",
             "Maintain corporate structuring and ensure compliance with prevailing laws and regulations."
           ]
+        }
+      ]
+    },
+    {
+      "company": "Queens College of Law and Management",
+      "location": "Bhanimandal, Lalitpur",
+      "roles": [
+        {
+          "title": "Lecturer Faculty",
+          "type": "Part-Time",
+          "from": "1 January 2025",
+          "to": "30 June 2025",
+          "responsibilities": []
+        }
+      ]
+    },
+    {
+      "company": "Institute of International Management Science College",
+      "location": "Naxal, Kathmandu",
+      "roles": [
+        {
+          "title": "Faculty on Integrity and Anti-Corruption",
+          "type": "Part-Time",
+          "from": "3 September 2024",
+          "to": "Present",
+          "responsibilities": []
         }
       ]
     },
@@ -93,6 +126,8 @@
           "responsibilities": [
             "Led merger and acquisition.",
             "Provided legal advice on corporate, labor, and regulatory matters.",
+            "Proposed Amendment to the Federal Government to amend sector-based Directives.",
+            "Formulated Policy against Sexual Harassment at the Workplace (first policy in 12 years).",
             "Drafted, reviewed, and managed contracts, MOUs, and legal correspondences.",
             "Ensured compliance with labor law, company law, and industry-specific laws and regulations.",
             "Provided opinions on complaints and grievances.",
@@ -112,10 +147,12 @@
           "from": "1 November 2022",
           "to": "31 March 2024",
           "responsibilities": [
-            "Reviewed policies and reports on organizational thematic priorities; lobbied with the government for policy formulation.",
-            "Designed and implemented initiatives on informal economy and labor relations, focusing on women's labor rights.",
-            "Led project cycles for international groups on contemporary issues, including climate justice, women's rights, purple economy, social protection, and gig economy.",
-            "Facilitated sessions on human rights, cyber harassment, and humanitarian initiatives.",
+            "Reviewed policies and reports on GBV; lobbied with the federal government for policy formulation (proposed amendment on laws against acid and burn survivors).",
+            "Designed and implemented initiatives on informal economy, gig economy, and labor relations, focusing on women's labor rights.",
+            "Led project cycles for Global Volunteers (4 groups in a year) on contemporary issues including climate justice, women's rights, purple economy, social protection, and gig economy; negotiated with the donor for the increment of the budget per day from $38 to $55.",
+            "Facilitated sessions on human rights, cyber harassment, and humanitarian initiatives including 'Grand Bargain and National Reference Groups'.",
+            "Provided thematic and administrative support for events on feminist leadership and climate justice campaigns.",
+            "Ensured organizational representation at forums, participated in priority events, and supported information management and communication.",
             "Drafted and reviewed MOUs and agreements; translated English documents into Nepali and vice versa."
           ]
         }
@@ -254,7 +291,9 @@
     "Determined",
     "Professionalism",
     "Results Oriented",
-    "Integrity"
+    "Integrity",
+    "Empathetic",
+    "Respect for Diversity"
   ],
   "languages": ["English", "Nepali"],
   "publications": [
@@ -312,6 +351,31 @@
       "title": "Researcher at 'Madhav Acharya Moot Court'",
       "organizer": "Kathmandu School of Law, Suryabinayak-4, Bhaktapur",
       "date": "2015"
+    },
+    {
+      "title": "Participated in '16 Days Campaign for Elimination of Gender Based Violence'",
+      "organizer": "Kathmandu School of Law",
+      "date": "25 November 2014 to 10 December 2014"
+    },
+    {
+      "title": "Speaker on 'Medio-Legal' session",
+      "organizer": "Rotaract Club of Kathmandu Medical College, Duwakot, Bhaktapur",
+      "date": "5 March 2021"
+    },
+    {
+      "title": "Participated in 'Youth Sexual and Reproductive Health Rights Innovation Roundtable: Connecting the Dots for All'",
+      "organizer": "YUWA",
+      "date": "6 to 7 September 2022"
+    },
+    {
+      "title": "Taken Online Course on 'Human Rights Based Approach'",
+      "organizer": "ActionAid Sharepoint",
+      "date": "5 September 2023"
+    },
+    {
+      "title": "Taken Online Course on 'Sexual Harassment Exploitation and Abuse and Safeguarding'",
+      "organizer": "ActionAid Sharepoint",
+      "date": "9 September 2023"
     }
   ],
   "references": [
@@ -328,6 +392,27 @@
       "company": "SiliconHire Pvt. Ltd.",
       "phone": "+977 9810276473",
       "email": "aalok@siliconhire.com"
+    },
+    {
+      "name": "Mahesh Badal",
+      "title": "Program Specialist",
+      "company": "Food and Agriculture Organization of United Nations",
+      "phone": "+977 9851137091",
+      "email": "Mahesh.badal@fao.org"
+    },
+    {
+      "name": "Jyotsna Maskay",
+      "title": "Chairperson",
+      "company": "Loom Nepal",
+      "phone": "+977 9801037338",
+      "email": "jyotsna@loomnepal.org"
+    },
+    {
+      "name": "Nisha Lama Karki",
+      "title": "Gender Based Violence Protection Coordinator",
+      "company": "ActionAid Ireland",
+      "phone": "+977 9851002158",
+      "email": "nishakarki@actionaid.org"
     }
   ],
   "theme": {

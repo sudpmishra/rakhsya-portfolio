@@ -1,5 +1,6 @@
 "use client";
 import { Mail, Phone, MapPin, ChevronDown, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 interface HeroProps {
   hero: {
@@ -176,6 +177,18 @@ export default function Hero({ hero, contact }: HeroProps) {
               </a>
             ))}
           </div>
+        </div>
+        <div style={{
+          width: "100%", height: "100%",
+        }} >
+          <Image src="/headshot.jpg" alt="Headshot" width={400} height={400} style={{
+            position: "absolute", top: "50%", right: 32, transform: "translateY(-50%)",
+            borderRadius: "50%",
+            border: "4px solid rgba(255,255,255,0.3)",
+            width: 400, height: 400,
+            boxShadow: "0 0 16px rgba(255,255,255,0.2)",
+            objectFit: "cover",
+          }} />
         </div>
       </div>
 
