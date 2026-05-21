@@ -1,0 +1,339 @@
+{
+  "site": {
+    "title": "Rakshya Singh | Advocate",
+    "description": "Advocate at Nepal Bar Council specializing in corporate, labor, and regulatory law.",
+    "url": "https://rakshyasingh.com.np"
+  },
+  "hero": {
+    "name": "Rakshya Singh",
+    "title": "Advocate, Nepal Bar Council",
+    "licenseNo": "License No. 18434 (since March 2021)",
+    "tagline": "Corporate. Labor. Regulatory.",
+    "summary": "A detail-oriented lawyer with 5+ years of experience focusing on corporate, labor, and regulatory laws. Proven expertise in providing strategic legal advice to businesses, drafting, and reviewing a wide range of legal documents.",
+    "ctaText": "Get In Touch",
+    "ctaLink": "#contact",
+    "secondaryCtaText": "View My Work",
+    "secondaryCtaLink": "#experience"
+  },
+  "contact": {
+    "phone": "+977 9860451870",
+    "email": "rakshyasingh21@gmail.com",
+    "location": "Kathmandu-10, Bagmati, Nepal",
+    "linkedin": "",
+    "showContactForm": true
+  },
+  "about": {
+    "heading": "About Me",
+    "body": "A detail-oriented lawyer with 5+ years of experience focusing on corporate, labor, and regulatory laws. Proven expertise in providing strategic legal advice to businesses, drafting, and reviewing a wide range of legal documents. Strong track record in ensuring organizational compliance with company laws, industry laws, labor laws, and sector-specific regulations. An ordinary member at the Nepal Council of Arbitration (NEPCA) since October 2024.",
+    "memberships": [
+      "Nepal Bar Council — Advocate (License No. 18434)",
+      "Nepal Council of Arbitration (NEPCA) — Ordinary Member since October 2024"
+    ]
+  },
+  "skills": [
+    { "name": "Business Structuring & Incorporation", "category": "Corporate" },
+    { "name": "Regulatory Compliances", "category": "Regulatory" },
+    { "name": "Consultation & Advisory", "category": "Advisory" },
+    { "name": "Litigation", "category": "Litigation" },
+    { "name": "Merger & Acquisition", "category": "Corporate" },
+    { "name": "Dispute Resolution", "category": "Litigation" },
+    { "name": "Legal Drafting & Documentation", "category": "Drafting" },
+    { "name": "Legal Research", "category": "Research" },
+    { "name": "Translation", "category": "Language" },
+    { "name": "Communication", "category": "Soft Skills" }
+  ],
+  "experience": [
+    {
+      "company": "Mogha Infrablocks Ltd.",
+      "location": "Hadigaun, Kathmandu",
+      "roles": [
+        {
+          "title": "Legal and Compliance Officer",
+          "type": "Full-Time",
+          "from": "27 July 2025",
+          "to": "Present",
+          "responsibilities": [
+            "Draft and submit amendments to the Specialized Investment Fund (SIF) Regulation to the Regulatory Authority.",
+            "Review and update internal policies, including HR, Code of Conducts, and Risk Management frameworks.",
+            "Ensure AML compliance through timely quarterly and biannual reporting.",
+            "Draft and review contracts, MOUs, and legal correspondences.",
+            "Effective communication with international teams, consultants, and internal departments.",
+            "Review PEVC fund structuring documents (Fund Constitution, Offer Document, and Investment Agreement) for regulatory approval.",
+            "Perform Company Secretary duties, including drafting Board minutes, managing AGM/EGM, and preparing the Annual Report.",
+            "Maintain corporate structuring and ensure compliance with prevailing laws and regulations."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "National Path Labs and Research Centre Pvt. Ltd.",
+      "location": "Tangal, Kathmandu",
+      "roles": [
+        {
+          "title": "Company Secretary",
+          "type": "Full-Time",
+          "from": "16 December 2024",
+          "to": "26 July 2025",
+          "responsibilities": [
+            "Advised the Board on corporate governance, statutory compliance, and regulatory obligations.",
+            "Ensured the compliance with applicable laws through timely filings and maintenance of statutory records.",
+            "Organized and managed Board Meetings, AGM, and EGM in accordance with legal and procedural requirements.",
+            "Drafted and maintained minutes and official resolutions of Board and shareholder meetings.",
+            "Monitored and ensured implementation of Board and Shareholder decisions.",
+            "Acted as the key liaison between the Board, Management, Shareholders, and Regulatory Authorities.",
+            "Circulated meeting notices, agendas, and relevant documentation in a timely and confidential manner.",
+            "Maintained corporate records and safeguarded official company documentation."
+          ]
+        },
+        {
+          "title": "Legal Officer",
+          "type": "Full-Time",
+          "from": "24 September 2024",
+          "to": "26 July 2025",
+          "responsibilities": [
+            "Led merger and acquisition.",
+            "Provided legal advice on corporate, labor, and regulatory matters.",
+            "Drafted, reviewed, and managed contracts, MOUs, and legal correspondences.",
+            "Ensured compliance with labor law, company law, and industry-specific laws and regulations.",
+            "Provided opinions on complaints and grievances.",
+            "Updated team with changes in relevant legislation.",
+            "Ensured internal departments coordination on legal and compliance-related issues."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "ActionAid International Nepal",
+      "location": "Lazimpat, Kathmandu",
+      "roles": [
+        {
+          "title": "Associate Programme Support Officer",
+          "type": "Full-Time",
+          "from": "1 November 2022",
+          "to": "31 March 2024",
+          "responsibilities": [
+            "Reviewed policies and reports on organizational thematic priorities; lobbied with the government for policy formulation.",
+            "Designed and implemented initiatives on informal economy and labor relations, focusing on women's labor rights.",
+            "Led project cycles for international groups on contemporary issues, including climate justice, women's rights, purple economy, social protection, and gig economy.",
+            "Facilitated sessions on human rights, cyber harassment, and humanitarian initiatives.",
+            "Drafted and reviewed MOUs and agreements; translated English documents into Nepali and vice versa."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Loom Nepal",
+      "location": "Thapathali, Kathmandu",
+      "roles": [
+        {
+          "title": "Project Officer",
+          "type": "Full-Time",
+          "from": "15 March 2022",
+          "to": "18 September 2022",
+          "responsibilities": [
+            "Led the 'Feminist Entrepreneurship' project 'SIWA'.",
+            "Drafted and reviewed organizational policies and partnership agreements.",
+            "Conducted legal workshops; built partnerships with feminist organizations and local governments.",
+            "Developed joint projects with municipalities and prepared specific reports.",
+            "Maintained legal and administrative project requirements."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "SiliconHire Pvt. Ltd.",
+      "location": "Ghattekulo, Kathmandu",
+      "roles": [
+        {
+          "title": "Legal Analyst",
+          "type": "Full-Time",
+          "from": "21 September 2020",
+          "to": "20 March 2022",
+          "responsibilities": [
+            "Led Public Interest Litigation (PIL) at the Supreme Court for e-commerce operations during COVID-19.",
+            "Conducted a 15-day human rights awareness campaign on social media targeting International Human Rights Day.",
+            "Guided business incorporation, structuring, and compliances.",
+            "Provided legal opinions, contract drafting, and pro bono advising via an online portal.",
+            "Organized training sessions on arbitration and bar examination preparation.",
+            "Reviewed content for legal literacy on social media."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Lex Advisors Pvt. Ltd.",
+      "location": "Anamanagar, Kathmandu",
+      "roles": [
+        {
+          "title": "Associate-Trainee",
+          "type": "Full-Time",
+          "from": "1 December 2019",
+          "to": "2 March 2020",
+          "responsibilities": [
+            "Supported corporate law practice, compliance updates, and legal research.",
+            "Drafted and reviewed agreements, resolved conflicts, and negotiated agreements."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Office of Attorney General",
+      "location": "Singadurbar, Kathmandu",
+      "roles": [
+        {
+          "title": "Legal Intern",
+          "type": "Part-Time",
+          "from": "5 December 2018",
+          "to": "7 March 2019",
+          "responsibilities": [
+            "Prepared correspondence for government attorneys and attended court proceedings."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Gandhi and Associates Pvt. Ltd.",
+      "location": "Anamanagar, Kathmandu",
+      "roles": [
+        {
+          "title": "Legal Intern",
+          "type": "Part-Time",
+          "from": "22 November 2017",
+          "to": "22 February 2018",
+          "responsibilities": [
+            "Conducted research on corporate legal opinions and hydropower projects.",
+            "Assisted with legal translation, drafting, due diligence, and correspondence."
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Kathmandu School of Law",
+      "location": "Suryabinayak-4, Bhaktapur, Nepal",
+      "degree": "LL.M in Human Rights and Gender Justice",
+      "from": "2019",
+      "to": "2023",
+      "dissertation": "An analysis of women's property rights after the promulgation of the National Civil Code, 2074"
+    },
+    {
+      "institution": "Kathmandu School of Law",
+      "location": "Suryabinayak-4, Bhaktapur, Nepal",
+      "degree": "B.A.LL.B in Business Law",
+      "from": "2014",
+      "to": "2019",
+      "dissertation": "Plant Variety Protection vis-à-vis Farmer's Rights in context of Nepal"
+    },
+    {
+      "institution": "Premier College",
+      "location": "New Banesor, Kathmandu, Nepal",
+      "degree": "Higher Secondary, Biology",
+      "from": "2011",
+      "to": "2013",
+      "dissertation": ""
+    },
+    {
+      "institution": "Merryland Public Higher Secondary School",
+      "location": "Tinkune, Kathmandu, Nepal",
+      "degree": "S.L.C, Mathematics and Accountancy",
+      "from": "2010",
+      "to": "2010",
+      "dissertation": ""
+    }
+  ],
+  "achievements": [
+    "Decision by the Supreme Court of Nepal on PIL filed on e-commerce operations during COVID-19.",
+    "Decent academic performance in LL.M (74.75%).",
+    "Secured 32nd position in Nepal Bar Examination, competing against over 2K attendees.",
+    "Editorial on 'Digital Security'."
+  ],
+  "personalTraits": [
+    "Analytical",
+    "Detail-Oriented",
+    "Determined",
+    "Professionalism",
+    "Results Oriented",
+    "Integrity"
+  ],
+  "languages": ["English", "Nepali"],
+  "publications": [
+    {
+      "title": "Protecting the Right to Employment",
+      "url": "https://theannapurnaexpress.com/story/49463/"
+    },
+    {
+      "title": "Eradicate Caste-Based Crimes (Co-authored)",
+      "url": "https://beta.gorkhapatraonline.com/viewer?file=https://beta.gorkhapatraonline.com/ArchiveNewsFile/619ed6bf1fbcc_trn_pdf.pdf"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Participated in 'Women in Data Conference'",
+      "organizer": "Women in Data Steering Committee supported by UK International Development, The Asia Foundation, and Data for Development in Nepal",
+      "date": "25 February 2025"
+    },
+    {
+      "title": "Participated in 'Contract Management and Dispute Settlement in Arbitration'",
+      "organizer": "Nepal Council of Arbitration (NEPCA) and Special Court Bar Association (SCBA)",
+      "date": "11 January to 15 January 2024"
+    },
+    {
+      "title": "Participated in 'Negotiation Workshop'",
+      "organizer": "Commercial Law Development Program under Department of State, USA in collaboration with Nepal Bar Association",
+      "date": "18 October to 19 October 2022"
+    },
+    {
+      "title": "Speaker on workshop on 'Cyber Harassment'",
+      "organizer": "Rotaract Club of Balaju, Rotaract Club of Gyaneshwor, CIST and Rotaract Club of Rudramati Babarmahal, Kathmandu",
+      "date": "23 April 2022"
+    },
+    {
+      "title": "Trainer on 'Legal Awareness Campaign'",
+      "organizer": "Rotaract club of Phulbari in collaboration with Rotaract club of Rudramati Babarmahal and Rotaract club of Manohora",
+      "date": "Rota year 2018-2019"
+    },
+    {
+      "title": "Organizer — 21 days residential school 'Legal Literacy and Advocacy service to Community'",
+      "organizer": "",
+      "date": "8 January 2018 to 28 January 2018"
+    },
+    {
+      "title": "Organizer — 'Five days Symposium on Legal Professionalism'",
+      "organizer": "",
+      "date": "9 April 2017 to 13 April 2017"
+    },
+    {
+      "title": "Participated in 'Community Mobile Legal Clinic' (Grade 'A')",
+      "organizer": "Kathmandu School of Law, Suryabinayak-4, Bhaktapur",
+      "date": "15 March 2017 to 24 March 2017"
+    },
+    {
+      "title": "Researcher at 'Madhav Acharya Moot Court'",
+      "organizer": "Kathmandu School of Law, Suryabinayak-4, Bhaktapur",
+      "date": "2015"
+    }
+  ],
+  "references": [
+    {
+      "name": "Pawan Joshi",
+      "title": "Managing Director",
+      "company": "National Path Lab and Research Centre Pvt. Ltd.",
+      "phone": "+977 9851142039",
+      "email": "pawan.joshi@nationalpathlabs.com"
+    },
+    {
+      "name": "Aalok Subedi",
+      "title": "Chief Executive Officer",
+      "company": "SiliconHire Pvt. Ltd.",
+      "phone": "+977 9810276473",
+      "email": "aalok@siliconhire.com"
+    }
+  ],
+  "theme": {
+    "primaryColor": "#1a3a5c",
+    "accentColor": "#c9a227",
+    "fontHeading": "Playfair Display",
+    "fontBody": "Inter"
+  }
+}
