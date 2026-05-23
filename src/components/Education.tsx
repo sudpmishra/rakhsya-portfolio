@@ -12,81 +12,37 @@ interface EduItem {
 
 export default function Education({ education }: { education: EduItem[] }) {
   return (
-    <section
-      id="education"
-      style={{
-        background: "#f5f3ff",
-        padding: "100px 0",
-      }}
-    >
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 32px" }}>
-        <p className="eyebrow" style={{ marginBottom: 12 }}>Academic Background</p>
-        <h2 className="section-heading" style={{ marginBottom: 16 }}>Education</h2>
-        <div className="accent-bar" style={{ marginBottom: 56 }} />
+    <section id="education" className="bg-white py-25">
+      <div className="max-w-300 mx-auto px-8">
+        <p className="eyebrow mb-3">Academic Background</p>
+        <h2 className="section-heading mb-4">Education</h2>
+        <div className="accent-bar mb-14" />
 
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(480px, 1fr))",
-          gap: 24,
-        }}>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(480px,1fr))] gap-6">
           {education.map((edu, i) => (
             <div
               key={i}
-              style={{
-                background: "#ffffff",
-                border: "1px solid #e2e8f0",
-                borderRadius: 16,
-                padding: "32px",
-                transition: "box-shadow 0.25s, transform 0.25s",
-              }}
-              onMouseEnter={e => {
-                (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 40px rgba(30,58,138,0.1)";
-                (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)";
-              }}
-              onMouseLeave={e => {
-                (e.currentTarget as HTMLElement).style.boxShadow = "";
-                (e.currentTarget as HTMLElement).style.transform = "";
-              }}
+              className="bg-white border border-[#e8ede8] rounded-2xl p-8 hover:shadow-[0_12px_40px_rgba(65,69,53,0.1)] hover:-translate-y-0.5 transition-all duration-200"
             >
-              <div style={{ display: "flex", alignItems: "flex-start", gap: 18 }}>
-                <div style={{
-                  width: 48, height: 48, borderRadius: 14, flexShrink: 0,
-                  background: "linear-gradient(135deg, #1e3a8a, #6d28d9)",
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                }}>
+              <div className="flex items-start gap-4.5">
+                <div className="w-12 h-12 rounded-[14px] shrink-0 bg-linear-to-br from-[#414535] to-[#3EB489] flex items-center justify-center">
                   <GraduationCap size={20} color="#fff" />
                 </div>
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <span style={{
-                    display: "inline-flex",
-                    padding: "4px 12px", borderRadius: 100,
-                    background: "linear-gradient(135deg, #ede9fe, #dbeafe)",
-                    color: "#4c1d95", fontSize: "0.72rem", fontWeight: 700,
-                    marginBottom: 10,
-                  }}>
+                <div className="flex-1 min-w-0">
+                  <span className="inline-flex px-3 py-1 rounded-full bg-linear-to-r from-[#3EB489]/20 to-[#EFCEFA]/40 text-[#414535] text-[0.72rem] font-bold mb-2.5">
                     {edu.from}{edu.to !== edu.from ? ` — ${edu.to}` : ""}
                   </span>
-                  <h3 style={{
-                    fontFamily: "var(--font-playfair, serif)",
-                    fontSize: "1.1rem", fontWeight: 700,
-                    color: "#0f172a", lineHeight: 1.3, marginBottom: 4,
-                  }}>
+                  <h3 className="font-playfair text-[1.1rem] font-bold text-[#414535] leading-snug mb-1">
                     {edu.degree}
                   </h3>
-                  <p style={{ fontWeight: 700, fontSize: "0.85rem", color: "#1e3a8a", marginBottom: 2 }}>
-                    {edu.institution}
-                  </p>
-                  <p style={{ color: "#94a3b8", fontSize: "0.78rem" }}>{edu.location}</p>
+                  <p className="font-bold text-[0.85rem] text-[#3EB489] mb-0.5">{edu.institution}</p>
+                  <p className="text-[#414535]/40 text-[0.78rem]">{edu.location}</p>
 
                   {edu.dissertation && (
-                    <div style={{
-                      marginTop: 18, paddingTop: 18,
-                      borderTop: "1px dashed #e2e8f0",
-                      display: "flex", alignItems: "flex-start", gap: 8,
-                    }}>
-                      <BookOpen size={13} color="#8b5cf6" style={{ flexShrink: 0, marginTop: 2 }} />
-                      <p style={{ color: "#64748b", fontSize: "0.82rem", fontStyle: "italic", lineHeight: 1.6 }}>
-                        "{edu.dissertation}"
+                    <div className="mt-4.5 pt-4.5 border-t border-dashed border-[#e8ede8] flex items-start gap-2">
+                      <BookOpen size={13} color="#CC5A71" className="shrink-0 mt-0.5" />
+                      <p className="text-[#414535]/60 text-[0.82rem] italic leading-relaxed">
+                        &ldquo;{edu.dissertation}&rdquo;
                       </p>
                     </div>
                   )}

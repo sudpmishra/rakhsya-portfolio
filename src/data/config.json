@@ -16,6 +16,7 @@
     "secondaryCtaLink": "#experience"
   },
   "contact": {
+    "description": "For legal consultations, corporate matters, human rights advocacy, or any legal inquiries, feel free to reach out. I typically respond within 24 hours.",
     "phone": "+977 9860451870",
     "email": "rakshyasingh21@gmail.com",
     "location": "Kathmandu-10, Bagmati, Nepal",
@@ -31,23 +32,66 @@
     ]
   },
   "skills": [
-    { "name": "Business Structuring & Incorporation", "category": "Corporate" },
-    { "name": "Regulatory Compliances", "category": "Regulatory" },
-    { "name": "Consultation & Advisory", "category": "Advisory" },
-    { "name": "Litigation", "category": "Litigation" },
-    { "name": "Merger & Acquisition", "category": "Corporate" },
-    { "name": "Dispute Resolution", "category": "Litigation" },
-    { "name": "Legal Drafting & Documentation", "category": "Drafting" },
-    { "name": "Legal Research", "category": "Research" },
-    { "name": "Translation", "category": "Language" },
-    { "name": "Communication", "category": "Soft Skills" },
-    { "name": "Advocacy", "category": "Advocacy" },
-    { "name": "Policy Review", "category": "Policy" },
-    { "name": "Negotiation", "category": "Advisory" },
-    { "name": "Project Management", "category": "Soft Skills" },
-    { "name": "Partnership Management", "category": "Soft Skills" },
-    { "name": "Report Preparation", "category": "Soft Skills" },
-    { "name": "Workshops & Training", "category": "Soft Skills" }
+    {
+      "name": "Business Structuring & Incorporation",
+      "category": "Corporate"
+    },
+    {
+      "name": "Compliance",
+      "category": "Corporate"
+    },
+    {
+      "name": "Consultation & Advisory",
+      "category": "Advisory"
+    },
+    {
+      "name": "Litigation",
+      "category": "Litigation"
+    },
+    {
+      "name": "Merger & Acquisition",
+      "category": "Corporate"
+    },
+    {
+      "name": "Legal Drafting & Documentation",
+      "category": "Drafting"
+    },
+    {
+      "name": "Translation",
+      "category": "Language"
+    },
+    {
+      "name": "Communication",
+      "category": "Soft Skills"
+    },
+    {
+      "name": "Advocacy",
+      "category": "Advocacy"
+    },
+    {
+      "name": "Campaigns",
+      "category": "Advocacy"
+    },
+    {
+      "name": "Review and Amendment",
+      "category": "Policy"
+    },
+    {
+      "name": "Project Management",
+      "category": "Soft Skills"
+    },
+    {
+      "name": "Partnership Management",
+      "category": "Soft Skills"
+    },
+    {
+      "name": "Report Preparation",
+      "category": "Soft Skills"
+    },
+    {
+      "name": "Workshops & Training",
+      "category": "Soft Skills"
+    }
   ],
   "experience": [
     {
@@ -292,10 +336,12 @@
     "Professionalism",
     "Results Oriented",
     "Integrity",
-    "Empathetic",
     "Respect for Diversity"
   ],
-  "languages": ["English", "Nepali"],
+  "languages": [
+    "English",
+    "Nepali"
+  ],
   "publications": [
     {
       "title": "Protecting the Right to Employment",
@@ -318,14 +364,34 @@
       "date": "11 January to 15 January 2024"
     },
     {
+      "title": "Taken Online Course on 'Sexual Harassment Exploitation and Abuse and Safeguarding'",
+      "organizer": "ActionAid Sharepoint",
+      "date": "9 September 2023"
+    },
+    {
+      "title": "Taken Online Course on 'Human Rights Based Approach'",
+      "organizer": "ActionAid Sharepoint",
+      "date": "5 September 2023"
+    },
+    {
       "title": "Participated in 'Negotiation Workshop'",
       "organizer": "Commercial Law Development Program under Department of State, USA in collaboration with Nepal Bar Association",
       "date": "18 October to 19 October 2022"
     },
     {
+      "title": "Participated in 'Youth Sexual and Reproductive Health Rights Innovation Roundtable: Connecting the Dots for All'",
+      "organizer": "YUWA",
+      "date": "6 to 7 September 2022"
+    },
+    {
       "title": "Speaker on workshop on 'Cyber Harassment'",
       "organizer": "Rotaract Club of Balaju, Rotaract Club of Gyaneshwor, CIST and Rotaract Club of Rudramati Babarmahal, Kathmandu",
       "date": "23 April 2022"
+    },
+    {
+      "title": "Speaker on 'Medio-Legal' session",
+      "organizer": "Rotaract Club of Kathmandu Medical College, Duwakot, Bhaktapur",
+      "date": "5 March 2021"
     },
     {
       "title": "Trainer on 'Legal Awareness Campaign'",
@@ -356,26 +422,6 @@
       "title": "Participated in '16 Days Campaign for Elimination of Gender Based Violence'",
       "organizer": "Kathmandu School of Law",
       "date": "25 November 2014 to 10 December 2014"
-    },
-    {
-      "title": "Speaker on 'Medio-Legal' session",
-      "organizer": "Rotaract Club of Kathmandu Medical College, Duwakot, Bhaktapur",
-      "date": "5 March 2021"
-    },
-    {
-      "title": "Participated in 'Youth Sexual and Reproductive Health Rights Innovation Roundtable: Connecting the Dots for All'",
-      "organizer": "YUWA",
-      "date": "6 to 7 September 2022"
-    },
-    {
-      "title": "Taken Online Course on 'Human Rights Based Approach'",
-      "organizer": "ActionAid Sharepoint",
-      "date": "5 September 2023"
-    },
-    {
-      "title": "Taken Online Course on 'Sexual Harassment Exploitation and Abuse and Safeguarding'",
-      "organizer": "ActionAid Sharepoint",
-      "date": "9 September 2023"
     }
   ],
   "references": [

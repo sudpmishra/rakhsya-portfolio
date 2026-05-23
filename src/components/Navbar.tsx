@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const links = [
   { label: "About", href: "#about" },
@@ -17,71 +18,40 @@ export default function Navbar({ name }: { name: string }) {
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 50);
-    fn(); // run immediately so state is correct if page loads mid-scroll
+    fn();
     window.addEventListener("scroll", fn);
     return () => window.removeEventListener("scroll", fn);
   }, []);
 
-  const navBg = scrolled
-    ? "rgba(15, 30, 61, 0.97)"
-    : "rgba(15, 30, 61, 0.45)";
+  // Only this dynamic rgba value stays as inline style
+  const navBg = scrolled ? "rgba(65,69,53,0.97)" : "rgba(65,69,53,0.45)";
 
   return (
     <header
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 100,
-        background: navBg,
-        backdropFilter: "blur(16px)",
-        borderBottom: scrolled ? "1px solid rgba(255,255,255,0.07)" : "none",
-        transition: "all 0.35s ease",
-      }}
+      style={{ background: navBg }}
+      className={`fixed top-0 left-0 right-0 z-100 backdrop-blur-lg transition-all duration-350 ${scrolled ? "border-b border-white/7" : "border-b border-transparent"
+        }`}
     >
-      <nav
-        style={{
-          maxWidth: 1200,
-          margin: "0 auto",
-          padding: "0 32px",
-          height: 68,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
+      <nav className="max-w-300 mx-auto px-8 h-17 flex items-center justify-between">
         <a
           href="#hero"
-          style={{
-            fontFamily: "var(--font-playfair, serif)",
-            fontSize: "1.1rem",
-            fontWeight: 700,
-            color: "#fff",
-            textDecoration: "none",
-            letterSpacing: "0.01em",
-          }}
+          className="font-playfair text-[1.1rem] font-bold text-white no-underline tracking-[0.01em]"
         >
-          {name}
+          <Image
+            src="/signature.png"
+            alt={`${name} logo`}
+            width={280}
+            height={64}
+            className="inline-block filter-beige"
+          />
         </a>
 
-        {/* Desktop */}
-        <ul style={{ display: "flex", alignItems: "center", gap: 36, listStyle: "none", margin: 0, padding: 0 }} className="hidden md:flex">
-          {links.map((l) => (
+        <ul className="hidden md:flex items-center gap-9 list-none m-0 p-0">
+          {links.map(l => (
             <li key={l.href}>
               <a
                 href={l.href}
-                style={{
-                  color: "rgba(255,255,255,0.8)",
-                  textDecoration: "none",
-                  fontSize: "0.75rem",
-                  fontWeight: 600,
-                  letterSpacing: "0.12em",
-                  textTransform: "uppercase",
-                  transition: "color 0.2s",
-                }}
-                onMouseEnter={e => (e.currentTarget.style.color = "#c4b5fd")}
-                onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.8)")}
+                className="text-white/80 hover:text-[#3EB489] no-underline text-[0.75rem] font-semibold tracking-[0.12em] uppercase transition-colors duration-200"
               >
                 {l.label}
               </a>
@@ -90,9 +60,8 @@ export default function Navbar({ name }: { name: string }) {
         </ul>
 
         <button
-          className="md:hidden"
+          className="md:hidden bg-transparent border-none text-white cursor-pointer p-1"
           onClick={() => setOpen(!open)}
-          style={{ background: "none", border: "none", color: "#fff", cursor: "pointer", padding: 4 }}
           aria-label="Toggle menu"
         >
           {open ? <X size={22} /> : <Menu size={22} />}
@@ -100,29 +69,13 @@ export default function Navbar({ name }: { name: string }) {
       </nav>
 
       {open && (
-        <div
-          style={{
-            background: "rgba(15,30,61,0.98)",
-            borderTop: "1px solid rgba(255,255,255,0.08)",
-            padding: "16px 32px 24px",
-          }}
-        >
-          {links.map((l) => (
+        <div className="bg-[rgba(65,69,53,0.98)] border-t border-white/8 px-8 pb-6 pt-4">
+          {links.map(l => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              style={{
-                display: "block",
-                padding: "13px 0",
-                color: "rgba(255,255,255,0.8)",
-                textDecoration: "none",
-                fontSize: "0.8rem",
-                fontWeight: 600,
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                borderBottom: "1px solid rgba(255,255,255,0.07)",
-              }}
+              className="block py-3.25 text-white/80 hover:text-[#3EB489] no-underline text-[0.8rem] font-semibold tracking-widest uppercase border-b border-white/7 transition-colors duration-200"
             >
               {l.label}
             </a>

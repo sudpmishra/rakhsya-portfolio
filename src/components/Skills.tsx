@@ -1,19 +1,36 @@
 "use client";
+import { Briefcase, MessageSquare, Scale, FileText, Globe, Star, Megaphone, BookOpen, Shield, Search } from "lucide-react";
+import type { ReactNode } from "react";
 
 interface Skill {
   name: string;
   category: string;
 }
 
-const PALETTE: Record<string, { bg: string; text: string; border: string }> = {
-  Corporate:   { bg: "#eff6ff", text: "#1d4ed8", border: "#bfdbfe" },
-  Regulatory:  { bg: "#f0fdf4", text: "#15803d", border: "#bbf7d0" },
-  Advisory:    { bg: "#f5f3ff", text: "#6d28d9", border: "#ddd6fe" },
-  Litigation:  { bg: "#fff7ed", text: "#c2410c", border: "#fed7aa" },
-  Drafting:    { bg: "#fefce8", text: "#a16207", border: "#fef08a" },
-  Research:    { bg: "#f0f9ff", text: "#0369a1", border: "#bae6fd" },
-  Language:    { bg: "#fdf4ff", text: "#a21caf", border: "#f0abfc" },
-  "Soft Skills": { bg: "#f8fafc", text: "#475569", border: "#cbd5e1" },
+const PALETTE: Record<string, { bg: string; text: string; border: string; stripe: string }> = {
+  Corporate: { bg: "#f0faf6", text: "#2d9a72", border: "#b5e8d4", stripe: "#3EB489" },
+  Regulatory: { bg: "#fdf5ff", text: "#9333ea", border: "#EFCEFA", stripe: "#EFCEFA" },
+  Advisory: { bg: "#fff2f5", text: "#CC5A71", border: "#f5c0cb", stripe: "#CC5A71" },
+  Litigation: { bg: "#f0faf6", text: "#3EB489", border: "#b5e8d4", stripe: "#3EB489" },
+  Drafting: { bg: "#fdf5ff", text: "#414535", border: "#EFCEFA", stripe: "#CC5A71" },
+  Research: { bg: "#f0faf6", text: "#2d9a72", border: "#b5e8d4", stripe: "#3EB489" },
+  Language: { bg: "#fff2f5", text: "#CC5A71", border: "#f5c0cb", stripe: "#CC5A71" },
+  "Soft Skills": { bg: "#f8f8f6", text: "#414535", border: "#d8d9d1", stripe: "#414535" },
+  Advocacy: { bg: "#f0faf6", text: "#3EB489", border: "#b5e8d4", stripe: "#3EB489" },
+  Policy: { bg: "#fdf5ff", text: "#414535", border: "#EFCEFA", stripe: "#EFCEFA" },
+};
+
+const ICONS: Record<string, ReactNode> = {
+  Corporate: <Briefcase size={17} />,
+  Regulatory: <Shield size={17} />,
+  Advisory: <MessageSquare size={17} />,
+  Litigation: <Scale size={17} />,
+  Drafting: <FileText size={17} />,
+  Research: <Search size={17} />,
+  Language: <Globe size={17} />,
+  "Soft Skills": <Star size={17} />,
+  Advocacy: <Megaphone size={17} />,
+  Policy: <BookOpen size={17} />,
 };
 
 export default function Skills({ skills }: { skills: Skill[] }) {
@@ -23,106 +40,69 @@ export default function Skills({ skills }: { skills: Skill[] }) {
   }, {});
 
   return (
-    <section
-      id="skills"
-      style={{
-        background: "#f5f3ff",
-        padding: "100px 0",
-      }}
-    >
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 32px" }}>
-        <div style={{ textAlign: "center", marginBottom: 64 }}>
-          <p className="eyebrow" style={{ marginBottom: 12 }}>Expertise</p>
-          <h2 className="section-heading" style={{ marginBottom: 16 }}>Areas of Practice</h2>
-          <div className="accent-bar" style={{ margin: "0 auto" }} />
-        </div>
+    <section id="skills" className="bg-white py-25">
+      <div className="max-w-300 mx-auto px-8">
 
-        {/* Big pill cloud */}
-        <div style={{
-          display: "flex", flexWrap: "wrap", justifyContent: "center",
-          gap: 12, marginBottom: 64,
-        }}>
-          {skills.map(skill => {
-            const c = PALETTE[skill.category] ?? PALETTE["Soft Skills"];
-            return (
-              <span
-                key={skill.name}
-                style={{
-                  display: "inline-flex", alignItems: "center",
-                  padding: "10px 22px", borderRadius: 100,
-                  background: c.bg, color: c.text,
-                  border: `1.5px solid ${c.border}`,
-                  fontSize: "0.875rem", fontWeight: 600,
-                  transition: "transform 0.2s, box-shadow 0.2s",
-                  cursor: "default",
-                }}
-                onMouseEnter={e => {
-                  (e.currentTarget as HTMLElement).style.transform = "scale(1.06)";
-                  (e.currentTarget as HTMLElement).style.boxShadow = "0 6px 20px rgba(139,92,246,0.18)";
-                }}
-                onMouseLeave={e => {
-                  (e.currentTarget as HTMLElement).style.transform = "";
-                  (e.currentTarget as HTMLElement).style.boxShadow = "";
-                }}
-              >
-                {skill.name}
-              </span>
-            );
-          })}
+        {/* Split header */}
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+          <div>
+            <p className="eyebrow mb-3">Expertise</p>
+            <h2 className="section-heading mb-4">Areas of Practice</h2>
+            <div className="accent-bar" />
+          </div>
         </div>
 
         {/* Category cards */}
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
-          gap: 20,
-        }}>
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-4">
           {Object.entries(grouped).map(([category, items]) => {
             const c = PALETTE[category] ?? PALETTE["Soft Skills"];
+            const icon = ICONS[category] ?? ICONS["Soft Skills"];
             return (
               <div
                 key={category}
-                style={{
-                  background: "#ffffff",
-                  border: "1px solid #e2e8f0",
-                  borderRadius: 16,
-                  padding: "24px",
-                  transition: "box-shadow 0.25s, transform 0.25s",
-                }}
-                onMouseEnter={e => {
-                  (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 40px rgba(30,58,138,0.1)";
-                  (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)";
-                }}
-                onMouseLeave={e => {
-                  (e.currentTarget as HTMLElement).style.boxShadow = "";
-                  (e.currentTarget as HTMLElement).style.transform = "";
-                }}
+                className="bg-white rounded-[20px] overflow-hidden border border-[#e8ede8] hover:border-transparent hover:shadow-[0_16px_48px_rgba(65,69,53,0.13)] hover:-translate-y-1 transition-all duration-200"
               >
-                <span style={{
-                  display: "inline-flex",
-                  padding: "4px 12px", borderRadius: 100,
-                  background: c.bg, color: c.text,
-                  border: `1px solid ${c.border}`,
-                  fontSize: "0.7rem", fontWeight: 700,
-                  letterSpacing: "0.06em", marginBottom: 16,
-                }}>
-                  {category.toUpperCase()}
-                </span>
-                <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 8 }}>
-                  {items.map(s => (
-                    <li key={s.name} style={{ display: "flex", alignItems: "flex-start", gap: 8, fontSize: "0.85rem", color: "#334155" }}>
-                      <span style={{
-                        width: 5, height: 5, borderRadius: "50%",
-                        background: c.text, flexShrink: 0, marginTop: 6,
-                      }} />
-                      {s.name}
-                    </li>
-                  ))}
-                </ul>
+                {/* Colored accent stripe */}
+                <div style={{ background: `linear-gradient(90deg, ${c.stripe}, ${c.border})` }} className="h-0.75" />
+
+                <div className="p-6">
+                  {/* Icon row */}
+                  <div className="flex items-start justify-between mb-5">
+                    <div
+                      style={{ background: c.bg, borderColor: c.border, color: c.text }}
+                      className="w-10 h-10 rounded-xl border flex items-center justify-center shrink-0"
+                    >
+                      {icon}
+                    </div>
+                    <span
+                      style={{ background: c.bg, color: c.text }}
+                      className="text-[0.65rem] font-extrabold tabular-nums w-6 h-6 rounded-full flex items-center justify-center"
+                    >
+                      {items.length}
+                    </span>
+                  </div>
+
+                  {/* Category heading */}
+                  <h3 className="font-playfair text-[1.05rem] font-bold text-[#414535] mb-4">{category}</h3>
+
+                  {/* Skill pill tags */}
+                  <div className="flex flex-wrap gap-1.5">
+                    {items.map(s => (
+                      <span
+                        key={s.name}
+                        style={{ background: c.bg, color: c.text, borderColor: c.border }}
+                        className="inline-flex text-[0.74rem] font-semibold px-2.5 py-1 rounded-full border leading-snug"
+                      >
+                        {s.name}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             );
           })}
         </div>
+
       </div>
     </section>
   );

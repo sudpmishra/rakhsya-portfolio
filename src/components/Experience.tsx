@@ -20,162 +20,105 @@ export default function Experience({ experience }: { experience: ExperienceItem[
   const [expanded, setExpanded] = useState<string | null>(experience[0]?.company ?? null);
 
   return (
-    <section id="experience" style={{ background: "#f5f3ff", padding: "100px 0" }}>
-      {/* Grid-row animation keyframe injected once */}
-      <style>{`
-        .exp-body {
-          display: grid;
-          grid-template-rows: 0fr;
-          transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .exp-body.open {
-          grid-template-rows: 1fr;
-        }
-        .exp-body-inner {
-          overflow: hidden;
-        }
-        .exp-content {
-          opacity: 0;
-          transform: translateY(-8px);
-          transition: opacity 0.3s ease 0.05s, transform 0.3s ease 0.05s;
-        }
-        .exp-body.open .exp-content {
-          opacity: 1;
-          transform: translateY(0);
-        }
-        .exp-chevron {
-          transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .exp-chevron.open {
-          transform: rotate(180deg);
-        }
-      `}</style>
+    <section id="experience" className="bg-[#fdf5ff] py-25">
+      <div className="max-w-300 mx-auto px-8">
+        <p className="eyebrow mb-3">Career</p>
+        <h2 className="section-heading mb-4">Work Experience</h2>
+        <div className="accent-bar mb-14" />
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 32px" }}>
-        <p className="eyebrow" style={{ marginBottom: 12 }}>Career</p>
-        <h2 className="section-heading" style={{ marginBottom: 16 }}>Work Experience</h2>
-        <div className="accent-bar" style={{ marginBottom: 56 }} />
-
-        <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+        <div className="flex flex-col gap-4">
           {experience.map((item, idx) => {
             const isOpen = expanded === item.company;
             return (
               <div
                 key={idx}
-                style={{
-                  border: isOpen ? "1.5px solid #c4b5fd" : "1.5px solid #e2e8f0",
-                  borderRadius: 16,
-                  overflow: "hidden",
-                  background: "#ffffff",
-                  boxShadow: isOpen ? "0 8px 32px rgba(109,40,217,0.08)" : "none",
-                  transition: "border-color 0.3s, box-shadow 0.3s",
-                }}
+                className={`rounded-2xl overflow-hidden bg-white transition-all duration-300 border-[1.5px] ${
+                  isOpen
+                    ? "border-[#CC5A71]/40 shadow-[0_8px_32px_rgba(204,90,113,0.08)]"
+                    : "border-[#e8ede8]"
+                }`}
               >
-                {/* Header button */}
                 <button
                   onClick={() => setExpanded(isOpen ? null : item.company)}
-                  style={{
-                    width: "100%", textAlign: "left",
-                    padding: "24px 28px",
-                    background: isOpen ? "linear-gradient(135deg, #faf5ff, #eff6ff)" : "transparent",
-                    border: "none", cursor: "pointer",
-                    display: "flex", alignItems: "flex-start",
-                    justifyContent: "space-between", gap: 16,
-                    transition: "background 0.3s",
-                  }}
+                  className={`w-full text-left px-7 py-6 border-none cursor-pointer flex items-start justify-between gap-4 transition-colors duration-300 ${
+                    isOpen ? "bg-linear-to-br from-[#EFCEFA]/20 to-[#3EB489]/10" : "bg-transparent"
+                  }`}
                 >
-                  <div style={{ flex: 1 }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 8 }}>
-                      <div style={{
-                        width: 42, height: 42, borderRadius: 12,
-                        background: isOpen
-                          ? "linear-gradient(135deg, #8b5cf6, #6d28d9)"
-                          : "linear-gradient(135deg, #1e3a8a, #1d4ed8)",
-                        display: "flex", alignItems: "center", justifyContent: "center",
-                        flexShrink: 0,
-                        transition: "background 0.3s",
-                      }}>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-3.5 mb-2">
+                      <div
+                        className={`w-10.5 h-10.5 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${
+                          isOpen
+                            ? "bg-linear-to-br from-[#3EB489] to-[#2d9a72]"
+                            : "bg-linear-to-br from-[#414535] to-[#2e3025]"
+                        }`}
+                      >
                         <Briefcase size={16} color="#fff" />
                       </div>
                       <div>
-                        <h3 style={{
-                          fontFamily: "var(--font-playfair, serif)",
-                          fontSize: "1.15rem", fontWeight: 700,
-                          color: "#0f172a", margin: 0,
-                        }}>
+                        <h3 className="font-playfair text-[1.15rem] font-bold text-[#414535] m-0">
                           {item.company}
                         </h3>
-                        <div style={{ display: "flex", alignItems: "center", gap: 5, marginTop: 3 }}>
-                          <MapPin size={11} color="#94a3b8" />
-                          <span style={{ color: "#94a3b8", fontSize: "0.78rem" }}>{item.location}</span>
+                        <div className="flex items-center gap-1 mt-0.5">
+                          <MapPin size={11} color="#414535" className="opacity-40" />
+                          <span className="text-[#414535]/40 text-[0.78rem]">{item.location}</span>
                         </div>
                       </div>
                     </div>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginLeft: 56 }}>
+                    <div className="flex flex-wrap gap-2 ml-14">
                       {item.roles.map((r, ri) => (
-                        <span key={ri} style={{
-                          display: "inline-flex", alignItems: "center",
-                          padding: "4px 12px", borderRadius: 100,
-                          background: isOpen ? "#ede9fe" : "#f1f5f9",
-                          color: isOpen ? "#6d28d9" : "#475569",
-                          border: `1px solid ${isOpen ? "#ddd6fe" : "#e2e8f0"}`,
-                          fontSize: "0.75rem", fontWeight: 600,
-                          transition: "background 0.3s, color 0.3s, border-color 0.3s",
-                        }}>
+                        <span
+                          key={ri}
+                          className={`inline-flex items-center px-3 py-1 rounded-full text-[0.75rem] font-semibold border transition-all duration-300 ${
+                            isOpen
+                              ? "bg-[#EFCEFA]/30 text-[#414535] border-[#EFCEFA]"
+                              : "bg-[#f1f5f1] text-[#414535]/60 border-[#e8ede8]"
+                          }`}
+                        >
                           {r.title}
                         </span>
                       ))}
                     </div>
                   </div>
 
-                  {/* Animated chevron */}
                   <ChevronDown
                     size={20}
-                    className={`exp-chevron${isOpen ? " open" : ""}`}
-                    style={{ color: isOpen ? "#8b5cf6" : "#94a3b8", flexShrink: 0, marginTop: 4, transition: "color 0.3s" }}
+                    className={`exp-chevron${isOpen ? " open" : ""} shrink-0 mt-1 transition-colors duration-300 ${
+                      isOpen ? "text-[#CC5A71]" : "text-[#414535]/40"
+                    }`}
                   />
                 </button>
 
-                {/* Animated body — always mounted, height driven by CSS grid */}
                 <div className={`exp-body${isOpen ? " open" : ""}`}>
                   <div className="exp-body-inner">
-                    <div
-                      className="exp-content"
-                      style={{ borderTop: "1px solid #f1f5f9" }}
-                    >
+                    <div className="exp-content border-t border-[#f1f5f1]">
                       {item.roles.map((role, ri) => (
                         <div
                           key={ri}
-                          style={{
-                            padding: "28px 28px",
-                            borderBottom: ri < item.roles.length - 1 ? "1px dashed #e2e8f0" : "none",
-                          }}
+                          className={`px-7 py-7 ${
+                            ri < item.roles.length - 1 ? "border-b border-dashed border-[#e8ede8]" : ""
+                          }`}
                         >
-                          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 12, marginBottom: 20 }}>
-                            <h4 style={{ fontWeight: 700, color: "#1e3a8a", fontSize: "0.95rem", margin: 0 }}>
-                              {role.title}
-                            </h4>
-                            <span style={{
-                              padding: "3px 10px", borderRadius: 100,
-                              background: role.type === "Full-Time" ? "#dcfce7" : "#fef9c3",
-                              color: role.type === "Full-Time" ? "#15803d" : "#854d0e",
-                              fontSize: "0.72rem", fontWeight: 700,
-                            }}>
+                          <div className="flex flex-wrap items-center gap-3 mb-5">
+                            <h4 className="font-bold text-[#3EB489] text-[0.95rem] m-0">{role.title}</h4>
+                            <span
+                              className={`px-2.5 py-0.5 rounded-full text-[0.72rem] font-bold ${
+                                role.type === "Full-Time"
+                                  ? "bg-[#3EB489]/15 text-[#2d9a72]"
+                                  : "bg-[#CC5A71]/15 text-[#CC5A71]"
+                              }`}
+                            >
                               {role.type}
                             </span>
-                            <div style={{ display: "flex", alignItems: "center", gap: 5, color: "#94a3b8", fontSize: "0.78rem" }}>
+                            <div className="flex items-center gap-1 text-[#414535]/40 text-[0.78rem]">
                               <Calendar size={12} />
                               {role.from} — {role.to}
                             </div>
                           </div>
-                          <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 10 }}>
+                          <ul className="list-none m-0 p-0 flex flex-col gap-2.5">
                             {role.responsibilities.map((r, i) => (
-                              <li key={i} style={{ display: "flex", alignItems: "flex-start", gap: 12, fontSize: "0.875rem", color: "#475569", lineHeight: 1.65 }}>
-                                <span style={{
-                                  width: 6, height: 6, borderRadius: "50%",
-                                  background: "linear-gradient(135deg, #8b5cf6, #3b82f6)",
-                                  flexShrink: 0, marginTop: 7,
-                                }} />
+                              <li key={i} className="flex items-start gap-3 text-[0.875rem] text-[#414535]/70 leading-[1.65]">
+                                <span className="w-1.5 h-1.5 rounded-full bg-linear-to-br from-[#3EB489] to-[#CC5A71] shrink-0 mt-1.75 block" />
                                 {r}
                               </li>
                             ))}

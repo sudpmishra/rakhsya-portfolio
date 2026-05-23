@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body style={{ fontFamily: "var(--font-inter, 'Inter', sans-serif)" }}>
+      <body>
         {children}
       </body>
     </html>
